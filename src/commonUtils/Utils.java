@@ -19,7 +19,6 @@ public class Utils {
 			String[] list = new String[size];
 			for(int i=0; i<size; i++){
 				list[i] = nl.item(i).getTextContent();
-				System.out.println(list[i]);
 			}
 			
 			return list;
