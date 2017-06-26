@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
-<SimilarityConfig>
-    <Mapping attribute="Description.ingredients" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="1.00"/>
-    <Mapping attribute="Description.ingrediants" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="1.00"/>
-    <Mapping attribute="Description.recipeId" function="jcolibri.method.retrieve.NNretrieval.similarity.local.Equal" weight="0.00"/>
-    <Mapping attribute="Description" function="jcolibri.method.retrieve.NNretrieval.similarity.global.Average" weight="1.00"/>
-</SimilarityConfig>
