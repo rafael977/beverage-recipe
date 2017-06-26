@@ -12,38 +12,37 @@ import de.dfki.mycbr.io.CSVImporter;
 public class CBREngine {
 
 	// set path to myCBR projects	
-	//private static String data_path = "C:\\Users\\bach\\IIS\\dev\\workspace\\myCBRWebDemo\\project\\";
-	public static String data_path = "D:\\Home\\Download\\CBR_Project_RecipeRecommender\\Recipe\\";  
+	private static String data_path = "mycbrproj\\";  
 	/* project specific: NewExampleProject*/
 	// name of the project file
-	private static String projectName = "new.prj";
+	private static String projectName = "project_recipe.prj";
 	// name of the central concept 
 	private static String conceptName = "recipe";
 	
 	// name of the case base that should be used; the default name in myCBR is CB_csvImport
-	private static String casebase = "NEW CASE BASE";
+	private static String casebase = "rcb";
 	// Getter for the Project meta data
-	public static String getCaseBase() {
+	public String getCaseBase() {
 		return casebase;
 	}
 
-	public static void setCasebase(String casebase) {
+	public void setCasebase(String casebase) {
 		CBREngine.casebase = casebase;
 	}
 
-	public static String getProjectName() {
+	public String getProjectName() {
 		return projectName;
 	}	
 
-	public static void setProjectName(String projectName) {
+	public void setProjectName(String projectName) {
 		CBREngine.projectName = projectName;
 	}
 
-	public static String getConceptName() {
+	public String getConceptName() {
 		return conceptName;
 	}
 
-	public static void setConceptName(String conceptName) {
+	public void setConceptName(String conceptName) {
 		CBREngine.conceptName = conceptName;
 	}
 

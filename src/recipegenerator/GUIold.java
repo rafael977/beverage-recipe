@@ -38,7 +38,7 @@ import javax.swing.table.DefaultTableModel;
 import de.dfki.mycbr.core.similarity.AmalgamationFct;
 
 
-public class GUI{
+public class GUIold{
 
 	public JPanel 		leftFrame,rightFrame, Inframe, Inframe1, Inframe11,Inframe12,Inframe2,
 	Inframe21,Inframe22,Inframe23, Outframe, Buttonframe, Labelframe, Fieldframe, AdaptionFrame,
@@ -64,7 +64,7 @@ public class GUI{
 	public String staples[],vegetables[],meats[],seafoods[],fruits[],newContent;
 	int selectedRowIndex=0;
 	
-	public GUI() { 
+	public GUIold() { 
 		remy = new Recommender();
 		remy.loadengine();
 		System.out.println("load");
@@ -1008,12 +1008,12 @@ public class GUI{
 		
 		
 	}
-	
-	public static void main(String[] args) {                
-		
-		GUI mygui = new GUI();
-		mygui.readFromCsv();
-	}
+//	
+//	public static void main(String[] args) {                
+//		
+//		GUI mygui = new GUI();
+//		mygui.readFromCsv();
+//	}
 	
 }
 
