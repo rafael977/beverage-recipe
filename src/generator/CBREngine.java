@@ -1,8 +1,6 @@
-package recipegenerator;
+package generator;
 
 import de.dfki.mycbr.core.Project;
-import de.dfki.mycbr.core.model.Concept;
-import de.dfki.mycbr.io.CSVImporter;
 
 
 /**
@@ -10,17 +8,16 @@ import de.dfki.mycbr.io.CSVImporter;
  */
 
 public class CBREngine {
-
 	// set path to myCBR projects	
-	private static String data_path = "mycbrproj\\";  
+	private static String data_path = System.getProperty("user.dir") + "\\mycbrproj\\";  
 	/* project specific: NewExampleProject*/
 	// name of the project file
 	private static String projectName = "project_recipe.prj";
 	// name of the central concept 
 	private static String conceptName = "recipe";
-	
 	// name of the case base that should be used; the default name in myCBR is CB_csvImport
 	private static String casebase = "rcb";
+	
 	// Getter for the Project meta data
 	public String getCaseBase() {
 		return casebase;
@@ -69,7 +66,7 @@ public class CBREngine {
 			System.out.print("\n");	//console pretty print			
 		}
 		catch(Exception ex){
-
+			ex.printStackTrace();
 			System.out.println("Failed:createProjectFromPRJ");
 		}		
 		return project;		

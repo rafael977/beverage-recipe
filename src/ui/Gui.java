@@ -1,4 +1,4 @@
-package recipegenerator;
+package ui;
 
 import java.awt.FlowLayout;
 
@@ -21,7 +21,7 @@ public class Gui extends JFrame {
 		setLayout(new FlowLayout());
 		
 		JPanel inputPanel = new JPanel();
-		inputPanel.setLayout( );
+//		inputPanel.setLayout( );
 		
 		// Set window properties
 		setGuiProperties();		
