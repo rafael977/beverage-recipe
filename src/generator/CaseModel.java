@@ -1,5 +1,7 @@
 package generator;
 
+import java.util.Arrays;
+
 public class CaseModel {
 	private int _recipeId;
 	private String[] _alcohol;
@@ -12,7 +14,7 @@ public class CaseModel {
 	private String _title;
 	private String _ingredient;
 	private String _step;
-	private float _sim;
+	private double _sim;
 	
 	public CaseModel (String[] alcohol, String[] nonalcohol, String[] fruit, String[] flavour, Boolean chilled, String degree, int noOfLiquid) {
 		_alcohol = alcohol;
@@ -24,16 +26,12 @@ public class CaseModel {
 		_noOfLiquid = noOfLiquid;
 	}
 	
-	public CaseModel (int recipeId, String[] alcohol, String[] nonalcohol, String[] fruit, String[] flavour, Boolean chilled, String degree, int noOfLiquid,
-			String title, String ingredient, String step, float sim) {
+	public CaseModel (int recipeId, String[] alcohol, String[] nonalcohol, String[] fruit, String[] flavour, String title, String ingredient, String step, double sim) {
 		_recipeId = recipeId;
 		_alcohol = alcohol;
 		_nonalcohol = nonalcohol;
 		_fruit = fruit;
 		_flavour = flavour;
-		_chilled = chilled;
-		_degree = degree;
-		_noOfLiquid = noOfLiquid;
 		_title = title;
 		_ingredient = ingredient;
 		_step = step;
@@ -129,11 +127,28 @@ public class CaseModel {
 		return _step;
 	}
 	
-	public void setSim(float value){
+	public void setSim(double value){
 		_sim = value;
 	}
-	public float getSim(){
+	public double getSim(){
 		return _sim;
+	}
+	
+	public String toString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("------------Recipe------------\n");
+		sb.append("Recipe ID: " + _recipeId + "\n");
+		sb.append("Title: " + _title + "\n");
+		sb.append("Alcohol: " + Arrays.toString(_alcohol) + "\n");
+		sb.append("NonAlcohol: " + Arrays.toString(_nonalcohol) + "\n");
+		sb.append("Fruit: " + Arrays.toString(_fruit) + "\n");
+		sb.append("Flavor: " + Arrays.toString(_flavour) + "\n");	
+		sb.append("Original ingredients: " + _ingredient + "\n");
+		sb.append("Steps: " + _step + "\n");
+		sb.append("Similarity: " + _sim + "\n");
+		sb.append("------------------------------\n");
+		
+		return sb.toString();
 	}
 	
 	private String combineString(String[] set){

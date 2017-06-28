@@ -23,4 +23,13 @@ public class Constants {
 	
 	public static final int NO_OF_CASES_TO_RETRIEVE = 5;
 	
+	public static final String FUNCNAME_ALCOHOL = "AlcoholFunct";
+	public static final String FUNCNAME_NONALCOHOL = "NonAlcohol";
+	public static final String FUNCNAME_FRUIT = "FruitFunct";
+	public static final String FUNCNAME_FLAVOUR = "FlavourFunct";
+	
+	public static final double TH_ALCOHOL = 0.75d;
+	public static final double TH_NONALCOHOL = 0.67d;
+	public static final double TH_FRUIT = 0.67d;
+	public static final double TH_FLAVOUR = 0.67d;
 }
