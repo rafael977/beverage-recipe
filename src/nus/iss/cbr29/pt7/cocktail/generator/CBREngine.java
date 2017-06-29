@@ -1,4 +1,4 @@
-package generator;
+package nus.iss.cbr29.pt7.cocktail.generator;
 
 import de.dfki.mycbr.core.Project;
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AlcoholicLiqeuerList>
-	<item>white rum</item>
-	<item>martini</item>
+	<item name="white rum" value="white rum"></item>
+	<item name="martini" value="martini"></item>
 </AlcoholicLiqeuerList>

@@ -1,4 +1,4 @@
-package generator;
+package nus.iss.cbr29.pt7.cocktail.generator;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -7,7 +7,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Vector;
 
-import commonUtils.Constants;
 import de.dfki.mycbr.core.DefaultCaseBase;
 import de.dfki.mycbr.core.Project;
 import de.dfki.mycbr.core.casebase.Attribute;
@@ -24,6 +23,7 @@ import de.dfki.mycbr.core.retrieval.SequentialRetrieval;
 import de.dfki.mycbr.core.similarity.ISimFct;
 import de.dfki.mycbr.core.similarity.Similarity;
 import de.dfki.mycbr.util.Pair;
+import nus.iss.cbr29.pt7.cocktail.util.Constants;
 
 
 public class Retriever {

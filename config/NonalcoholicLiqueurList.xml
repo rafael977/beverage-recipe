@@ -1,3 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NonalcoholicLiqueurList>
-	<item>orange juice</item></NonalcoholicLiqueurList>
+	<item name="orange juice" value="orange juice"></item>
+</NonalcoholicLiqueurList>

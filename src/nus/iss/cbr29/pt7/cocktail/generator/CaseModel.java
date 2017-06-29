@@ -1,6 +1,12 @@
-package generator;
+package nus.iss.cbr29.pt7.cocktail.generator;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.StringJoiner;
+import java.util.Vector;
+import java.util.stream.Collectors;
+
+import nus.iss.cbr29.pt7.cocktail.util.Constants;
 
 public class CaseModel {
 	private int _recipeId;
@@ -52,7 +58,7 @@ public class CaseModel {
 		return _alcohol;
 	}
 	public String getAlcoholSet(){
-		return combineString(_alcohol);
+		return String.join(", ", Arrays.stream(_alcohol).filter(x -> !x.equals(Constants.INGREDIENT_NONSELECT_DEFAULT)).collect(Collectors.toList()));
 	}
 	
 	public void setNonalcohol(String[] value){
@@ -62,7 +68,7 @@ public class CaseModel {
 		return _nonalcohol;
 	}
 	public String getNonalcoholSet(){
-		return combineString(_nonalcohol);
+		return String.join(", ", Arrays.stream(_nonalcohol).filter(x -> !x.equals(Constants.INGREDIENT_NONSELECT_DEFAULT)).collect(Collectors.toList()));
 	}
 	
 	public void setFruit(String[] value){
@@ -72,7 +78,7 @@ public class CaseModel {
 		return _fruit;
 	}
 	public String getFruitSet(){
-		return combineString(_fruit);
+		return String.join(", ", Arrays.stream(_fruit).filter(x -> !x.equals(Constants.INGREDIENT_NONSELECT_DEFAULT)).collect(Collectors.toList()));
 	}
 	
 	public void setFlavour(String[] value){
@@ -82,7 +88,7 @@ public class CaseModel {
 		return _flavour;
 	}
 	public String getFlavourSet(){
-		return combineString(_flavour);
+		return String.join(", ", Arrays.stream(_flavour).filter(x -> !x.equals(Constants.INGREDIENT_NONSELECT_DEFAULT)).collect(Collectors.toList()));
 	}
 	
 	public void setChilled(Boolean value){
@@ -117,7 +123,7 @@ public class CaseModel {
 		_ingredient = value;
 	}
 	public String getIngredient(){
-		return _ingredient;
+		return _ingredient.replace("|", "\n");
 	}
 	
 	public void setStep(String value){
@@ -151,13 +157,13 @@ public class CaseModel {
 		return sb.toString();
 	}
 	
-	private String combineString(String[] set){
-		StringBuilder sb = new StringBuilder();
-		for(String v : set){
-			sb.append(v);
-			sb.append(";");
-		}
+	public String getResultIngredients(){
+		Vector<String> list = new Vector<>();
+		if(!getAlcoholSet().isEmpty()) list.add(getAlcoholSet());
+		if(!getNonalcoholSet().isEmpty()) list.add(getNonalcoholSet());
+		if(!getFruitSet().isEmpty()) list.add(getFruitSet());
+		if(!getFlavourSet().isEmpty()) list.add(getFlavourSet());
 		
-		return sb.substring(0, sb.length());
+		return String.join("\n", list);
 	}
 }
