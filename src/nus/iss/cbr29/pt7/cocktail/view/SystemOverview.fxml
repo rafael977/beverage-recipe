@@ -5,10 +5,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
+
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXListView?>
 <?import com.jfoenix.controls.JFXRadioButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TableColumn?>
@@ -135,30 +137,30 @@
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
-                  <Label layoutX="17.0" layoutY="222.0" prefHeight="30.0" prefWidth="208.0" text="Original Ingredients:">
+                  <Label layoutX="17.0" layoutY="335.0" prefHeight="30.0" prefWidth="208.0" text="Original Ingredients:">
                      <font>
                         <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="txtOriginalIngredients" editable="false" layoutX="17.0" layoutY="252.0" prefHeight="70.0" prefWidth="363.0">
+                  <TextArea fx:id="txtOriginalIngredients" editable="false" layoutX="17.0" layoutY="365.0" prefHeight="89.0" prefWidth="363.0" wrapText="true">
                      <font>
                         <Font name="Roboto" size="12.0" />
                      </font></TextArea>
-                  <TextArea fx:id="txtOriginalSteps" editable="false" layoutX="17.0" layoutY="365.0" prefHeight="70.0" prefWidth="363.0">
+                  <TextArea fx:id="txtOriginalSteps" editable="false" layoutX="18.0" layoutY="482.0" prefHeight="89.0" prefWidth="363.0" wrapText="true">
                      <font>
                         <Font name="Roboto" size="12.0" />
                      </font></TextArea>
-                  <Label layoutX="17.0" layoutY="335.0" prefHeight="30.0" prefWidth="208.0" text="Original Steps:">
+                  <Label layoutX="17.0" layoutY="454.0" prefHeight="30.0" prefWidth="208.0" text="Original Steps:">
                      <font>
                         <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="17.0" layoutY="451.0" prefHeight="30.0" prefWidth="208.0" text="Adapted Ingredients:">
+                  <Label layoutX="17.0" layoutY="216.0" prefHeight="30.0" prefWidth="208.0" text="Adapted Ingredients:">
                      <font>
                         <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="txtAdaptedIngredients" editable="false" layoutX="17.0" layoutY="481.0" prefHeight="70.0" prefWidth="363.0">
+                  <TextArea fx:id="txtAdaptedIngredients" editable="false" layoutX="17.0" layoutY="246.0" prefHeight="89.0" prefWidth="363.0" wrapText="true">
                      <font>
                         <Font name="Roboto" size="12.0" />
                      </font></TextArea>
