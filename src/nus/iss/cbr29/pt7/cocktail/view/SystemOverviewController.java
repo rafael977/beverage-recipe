@@ -3,6 +3,10 @@ package nus.iss.cbr29.pt7.cocktail.view;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.jfoenix.controls.JFXListView;
+import com.jfoenix.controls.JFXRadioButton;
+import com.jfoenix.controls.JFXTextField;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -23,23 +27,23 @@ import nus.iss.cbr29.pt7.cocktail.util.Utils;
 
 public class SystemOverviewController {
 	@FXML
-    private ListView<IngredientItem> listViewAlcohol;
+    private JFXListView<IngredientItem> listViewAlcohol;
 	@FXML
-    private ListView<IngredientItem> listViewNonAlcohol;
+    private JFXListView<IngredientItem> listViewNonAlcohol;
 	@FXML
-    private ListView<IngredientItem> listViewFruit;
+    private JFXListView<IngredientItem> listViewFruit;
 	@FXML
-    private ListView<IngredientItem> listViewFlavour;
+    private JFXListView<IngredientItem> listViewFlavour;
 	@FXML
-    private RadioButton radioChilledYes;
+    private JFXRadioButton radioChilledYes;
 	@FXML
-    private RadioButton radioChilledNo;
+    private JFXRadioButton radioChilledNo;
 	@FXML
-    private RadioButton radioPercentHigh;
+    private JFXRadioButton radioPercentHigh;
 	@FXML
-    private RadioButton radioPercentLow;
+    private JFXRadioButton radioPercentLow;
 	@FXML
-    private RadioButton radioPercentNone;
+    private JFXRadioButton radioPercentNone;
 	@FXML
     private TextArea txtSelectedIngredients;
     @FXML
@@ -57,7 +61,7 @@ public class SystemOverviewController {
 	@FXML
     private TextArea txtAdaptedIngredients;
 	@FXML
-	private TextField txtNoOfLiquids;
+	private JFXTextField txtNoOfLiquids;
 	
     ToggleGroup groupChilled = new ToggleGroup();
     ToggleGroup groupPercentage = new ToggleGroup();
