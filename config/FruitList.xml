@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FruitList>
-	<item name="orange" value="orange"></item>
+	<item name="Berry Category" value="Berry Category"></item>
+	<item name="  berry" value="berry"></item>
+	<item name="  blackcurrant" value="blackcurrant"></item>
+	<item name="  cherry" value="cherry"></item>
+	<item name="  currant" value="currant"></item>
+	<item name="  raspberry" value="raspberry"></item>
+	<item name="  strawberry" value="strawberry"></item>
+	<item name="Citrus" value="Citrus"></item>
+	<item name="  blood orange" value="blood orange"></item>
+	<item name="  citrus fruit" value="citrus fruit"></item>
+	<item name="  clementine orange" value="clementine orange"></item>
+	<item name="  grapefruit" value="grapefruit"></item>
+	<item name="  kumquat" value="kumquat"></item>
+	<item name="  lemon" value="lemon"></item>
+	<item name="  lime" value="lime"></item>
+	<item name="  orange" value="orange"></item>
+	<item name="Tropical" value="Tropical"></item>
+	<item name="  banana" value="banana"></item>
+	<item name="  coconut" value="coconut"></item>
+	<item name="  litchi" value="litchi"></item>
+	<item name="  melon" value="melon"></item>
+	<item name="  pineapple" value="pineapple"></item>
+	<item name="Non-tropical" value="Non-tropical"></item>
+	<item name="  apple" value="apple"></item>
+	<item name="  kiwi fruit" value="kiwi fruit"></item>
+	<item name="  pear" value="pear"></item>
+	<item name="  season fruits" value="season fruits"></item>
+	<item name="Vegetable" value="Vegetable"></item>
+	<item name="  cucumbers" value="cucumbers"></item>
+	<item name="Others" value="Others"></item>
+	<item name="  egg" value="egg"></item>
+	<item name="  pistachio nut" value="pistachio nut"></item>
 </FruitList>

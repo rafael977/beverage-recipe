@@ -1,4 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FlavourList>
-	<item name="sugar" value="sugar"></item>
+	<item name="Creamy" value="Creamy"></item>
+	<item name="  ice cream" value="ice cream"></item>
+	<item name="  light whipping cream" value="light whipping cream"></item>
+	<item name="  lime sorbet" value="lime sorbet"></item>
+	<item name="  sour cream" value="sour cream"></item>
+	<item name="Refreshing" value="Refreshing"></item>
+	<item name="  anise basil" value="anise basil"></item>
+	<item name="  coriander" value="coriander"></item>
+	<item name="  lemon zest" value="lemon zest"></item>
+	<item name="  lemongrass" value="lemongrass"></item>
+	<item name="  lime zest" value="lime zest"></item>
+	<item name="  mint" value="mint"></item>
+	<item name="  mint syrup" value="mint syrup"></item>
+	<item name="Salty" value="Salty"></item>
+	<item name="  salt" value="salt"></item>
+	<item name="  saucecelery salt" value="saucecelery salt"></item>
+	<item name="Spice" value="Spice"></item>
+	<item name="  cinnamon" value="cinnamon"></item>
+	<item name="  nutmeg" value="nutmeg"></item>
+	<item name="  pepper" value="pepper"></item>
+	<item name="Spicy" value="Spicy"></item>
+	<item name="  ginger" value="ginger"></item>
+	<item name="  tabasco sauce" value="tabasco sauce"></item>
+	<item name="  wasabi" value="wasabi"></item>
+	<item name="  worcestershire sauce" value="worcestershire sauce"></item>
+	<item name="Sweet" value="Sweet"></item>
+	<item name="  apricot syrup" value="apricot syrup"></item>
+	<item name="  brown sugar" value="brown sugar"></item>
+	<item name="  cane sugar" value="cane sugar"></item>
+	<item name="  cane sugar syrup" value="cane sugar syrup"></item>
+	<item name="  coconut syrup" value="coconut syrup"></item>
+	<item name="  currant syrup" value="currant syrup"></item>
+	<item name="  fruit syrup" value="fruit syrup"></item>
+	<item name="  granulated sugar" value="granulated sugar"></item>
+	<item name="  grenadine" value="grenadine"></item>
+	<item name="  lemon syrup" value="lemon syrup"></item>
+	<item name="  orange syrup" value="orange syrup"></item>
+	<item name="  orgeat syrup" value="orgeat syrup"></item>
+	<item name="  passion fruit syrup" value="passion fruit syrup"></item>
+	<item name="  peach syrup" value="peach syrup"></item>
+	<item name="  powdered sugar" value="powdered sugar"></item>
+	<item name="  sangria syrup" value="sangria syrup"></item>
+	<item name="  strawberry syrup" value="strawberry syrup"></item>
+	<item name="  sugar" value="sugar"></item>
+	<item name="  vanilla sugar" value="vanilla sugar"></item>
 </FlavourList>
