@@ -25,3 +25,4 @@ bin/
 
 mycbrproj/
 !mycbrproj/project_recipe.prj
+!lib/*
