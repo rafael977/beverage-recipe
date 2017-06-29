@@ -1,6 +1,5 @@
 package nus.iss.cbr29.pt7.cocktail.view;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,7 +9,6 @@ import com.jfoenix.controls.JFXTextField;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.ObservableSet;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 import javafx.scene.control.RadioButton;
@@ -20,7 +18,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
-import nus.iss.cbr29.pt7.cocktail.MainApp;
 import nus.iss.cbr29.pt7.cocktail.generator.CaseModel;
 import nus.iss.cbr29.pt7.cocktail.generator.Retriever;
 import nus.iss.cbr29.pt7.cocktail.model.IngredientItem;
@@ -165,13 +162,13 @@ public class SystemOverviewController {
     
     private void populatePreferredText() {
     	String selectedAlcohol = listViewAlcohol.getSelectionModel().getSelectedItems().size() == 0 ?
-    			Constants.NO_SELECT_TEXT : String.join(", ", listViewAlcohol.getSelectionModel().getSelectedItems().stream().map(x -> x.toString()).collect(Collectors.toList()));
+    			Constants.NO_SELECT_TEXT : String.join(", ", listViewAlcohol.getSelectionModel().getSelectedItems().stream().map(x -> x.getValue()).collect(Collectors.toList()));
     	String selectedNonAlcohol = listViewNonAlcohol.getSelectionModel().getSelectedItems().size() == 0 ?
-    			Constants.NO_SELECT_TEXT : String.join(", ", listViewNonAlcohol.getSelectionModel().getSelectedItems().stream().map(x -> x.toString()).collect(Collectors.toList()));
+    			Constants.NO_SELECT_TEXT : String.join(", ", listViewNonAlcohol.getSelectionModel().getSelectedItems().stream().map(x -> x.getValue()).collect(Collectors.toList()));
     	String selectedFruit = listViewFruit.getSelectionModel().getSelectedItems().size() == 0 ?
-    			Constants.NO_SELECT_TEXT : String.join(", ", listViewFruit.getSelectionModel().getSelectedItems().stream().map(x -> x.toString()).collect(Collectors.toList()));
+    			Constants.NO_SELECT_TEXT : String.join(", ", listViewFruit.getSelectionModel().getSelectedItems().stream().map(x -> x.getValue()).collect(Collectors.toList()));
     	String selectedFlavor = listViewFlavour.getSelectionModel().getSelectedItems().size() == 0 ?
-    			Constants.NO_SELECT_TEXT : String.join(", ", listViewFlavour.getSelectionModel().getSelectedItems().stream().map(x -> x.toString()).collect(Collectors.toList()));
+    			Constants.NO_SELECT_TEXT : String.join(", ", listViewFlavour.getSelectionModel().getSelectedItems().stream().map(x -> x.getValue()).collect(Collectors.toList()));
     	String noofliquid = txtNoOfLiquids.getText();
     	String chilled = groupChilled.getSelectedToggle() != null ? ((RadioButton)groupChilled.getSelectedToggle()).getText() : Constants.NO_SELECT_TEXT;
     	String degree = groupPercentage.getSelectedToggle() != null ? ((RadioButton)groupPercentage.getSelectedToggle()).getText() : Constants.NO_SELECT_TEXT;

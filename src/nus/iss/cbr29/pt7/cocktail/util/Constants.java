@@ -39,6 +39,7 @@ public class Constants {
 	public static final double TH_FLAVOUR = 0.67d;
 	
 	public static final String INGREDIENT_NONSELECT_DEFAULT = "BLANK";
+	public static final String CHILLED_MESSAGE = "ice cube";
 	
 	public static final String PREFERRED_TEXT_TEMPLATE = String.join("\n", "Alcohol: %s",
 			"Non Alcohol: %s",

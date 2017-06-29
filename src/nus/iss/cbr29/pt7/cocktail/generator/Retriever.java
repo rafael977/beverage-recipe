@@ -162,6 +162,7 @@ public class Retriever {
 		String steps = attrs.get(stepDesc).getValueAsString();
 		
 		CaseModel result = new CaseModel(recipeId, alcoholList, nonalcoholList, fruitList, flavourList, title, originalIngredient, steps, sim.getRoundedValue());
+		result.setChilled(Boolean.valueOf(query.getAttributes().get(chilledDesc).toString()));
 		
 		System.out.println(result.toString());
 		System.out.println();

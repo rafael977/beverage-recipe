@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NonalcoholicLiqueurList>
-	<item name="orange juice" value="orange juice"></item>
+	<item name="Beverage" value="Beverage"></item>
+	<item name="  coca-cola" value="coca-cola"></item>
+	<item name="  coffee" value="coffee"></item>
+	<item name="  soda water" value="soda water"></item>
+	<item name="  soft drink" value="soft drink"></item>
+	<item name="  sparkling water" value="sparkling water"></item>
+	<item name="  schweppes" value="schweppes"></item>
+	<item name="  water" value="water"></item>
+	<item name="Juice" value="Juice"></item>
+	<item name="  Sour Juice" value="Sour Juice"></item>
+	<item name="     berry juice" value="berry juice"></item>
+	<item name="     cherry juice" value="cherry juice"></item>
+	<item name="     cranberry juice" value="cranberry juice"></item>
+	<item name="     grape juice" value="grape juice"></item>
+	<item name="     grapefruit juice" value="grapefruit juice"></item>
+	<item name="     guava juice" value="guava juice"></item>
+	<item name="     lemonade" value="lemonade"></item>
+	<item name="     lemon juice" value="lemon juice"></item>
+	<item name="     lime juice" value="lime juice"></item>
+	<item name="     multivitamin juice" value="multivitamin juice"></item>
+	<item name="     passion fruit juice" value="passion fruit juice"></item>
+	<item name="     strawberry juice" value="strawberry juice"></item>
+	<item name="     tamarin juice" value="tamarin juice"></item>
+	<item name="     tomato juice" value="tomato juice"></item>
+	<item name="  Sweet Juice" value="Sweet Juice"></item>
+	<item name="     apple cider" value="apple cider"></item>
+	<item name="     apple juice" value="apple juice"></item>
+	<item name="     apricot juice" value="apricot juice"></item>
+	<item name="     ananas juice" value="ananas juice"></item>
+	<item name="     banana juice" value="banana juice"></item>
+	<item name="     litchi juice" value="litchi juice"></item>
+	<item name="     manguo juice" value="manguo juice"></item>
+	<item name="     orange juice" value="orange juice"></item>
+	<item name="     peach juice" value="peach juice"></item>
+	<item name="     pear juice" value="pear juice"></item>
+	<item name="     pineapple juice" value="pineapple juice"></item>
+	<item name="Milk" value="Milk"></item>
+	<item name="  coconut milk" value="coconut milk"></item>
+	<item name="  rice milk" value="rice milk"></item>
+	<item name="  whole milk" value="whole milk"></item>
 </NonalcoholicLiqueurList>

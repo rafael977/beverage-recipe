@@ -163,6 +163,7 @@ public class CaseModel {
 		if(!getNonalcoholSet().isEmpty()) list.add(getNonalcoholSet());
 		if(!getFruitSet().isEmpty()) list.add(getFruitSet());
 		if(!getFlavourSet().isEmpty()) list.add(getFlavourSet());
+		if(_chilled) list.add(Constants.CHILLED_MESSAGE);
 		
 		return String.join("\n", list);
 	}

@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AlcoholicLiqeuerList>
-	<item name="white rum" value="white rum"></item>
-	<item name="martini" value="martini"></item>
+	<item name="Low ABV" value="Low ABV"></item>
+	<item name="  Casual Category" value="Casual Category"></item>
+	<item name="     beer" value="beer"></item>
+	<item name="     cava" value="cava"></item>
+	<item name="     champagne" value="champagne"></item>
+	<item name="     cremant" value="cremant"></item>
+	<item name="     prosecco" value="prosecco"></item>
+	<item name="     rice wine" value="rice wine"></item>
+	<item name="     sparkling wine" value="sparkling wine"></item>
+	<item name="     stout" value="stout"></item>
+	<item name="  Fruit/Special Taste" value="Fruit/Special Taste"></item>
+	<item name="     blue curacao" value="blue curacao"></item>
+	<item name="     cachaca" value="cachaca"></item>
+	<item name="     creme de cafe" value="creme de cafe"></item>
+	<item name="     creme de cassis" value="creme de cassis"></item>
+	<item name="     hard cider" value="hard cider"></item>
+	<item name="     triple sec" value="triple sec"></item>
+	<item name="  Liqueur Category" value="Liqueur Category"></item>
+	<item name="     apricot liqueur" value="apricot liqueur"></item>
+	<item name="     campari" value="campari"></item>
+	<item name="     coffee liqueur" value="coffee liqueur"></item>
+	<item name="     lemon liqueur" value="lemon liqueur"></item>
+	<item name="     liqueur" value="liqueur"></item>
+	<item name="     apple liqueur" value="apple liqueur"></item>
+	<item name="     litchi liqueur" value="litchi liqueur"></item>
+	<item name="     pear liqueur" value="pear liqueur"></item>
+	<item name="     pisang ambon" value="pisang ambon"></item>
+	<item name="  Wine Category" value="Wine Category"></item>
+	<item name="     blush wine" value="blush wine"></item>
+	<item name="     dry white wine" value="dry white wine"></item>
+	<item name="     martini" value="martini"></item>
+	<item name="     noilly prat" value="noilly prat"></item>
+	<item name="     porto" value="porto"></item>
+	<item name="     red martini" value="red martini"></item>
+	<item name="     vermouth" value="vermouth"></item>
+	<item name="     white martini" value="white martini"></item>
+	<item name="     white wine" value="white wine"></item>
+	<item name="High ABV" value="High ABV"></item>
+	<item name="  Brandy Category" value="Brandy Category"></item>
+	<item name="     calvados" value="calvados"></item>
+	<item name="     cognac" value="cognac"></item>
+	<item name="     kirsch" value="kirsch"></item>
+	<item name="     plum brandy" value="plum brandy"></item>
+	<item name="  Others" value="Others"></item>
+	<item name="     angostura bitter" value="angostura bitter"></item>
+	<item name="     benedictine" value="benedictine"></item>
+	<item name="     cointreau" value="cointreau"></item>
+	<item name="     pastis" value="pastis"></item>
+	<item name="     get_27" value="get_27"></item>
+	<item name="     gin" value="gin"></item>
+	<item name="     grand marnier" value="grand marnier"></item>
+	<item name="     mangalore" value="mangalore"></item>
+	<item name="     tequila" value="tequila"></item>
+	<item name="     vodka" value="vodka"></item>
+	<item name="whiskey" value="whiskey"></item>
+	<item name="  Rum Category" value="Rum Category"></item>
+	<item name="     amber rum" value="amber rum"></item>
+	<item name="     dark rum" value="dark rum"></item>
+	<item name="     malibu rum" value="malibu rum"></item>
+	<item name="     rum" value="rum"></item>
+	<item name="     white rum" value="white rum"></item>
 </AlcoholicLiqeuerList>
