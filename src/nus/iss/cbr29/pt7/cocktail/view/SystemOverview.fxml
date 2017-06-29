@@ -1,164 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.chart.*?>
-<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
 <?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nus.iss.cbr29.pt7.cocktail.view.SystemOverviewController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #c2c2c2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nus.iss.cbr29.pt7.cocktail.view.SystemOverviewController">
    <children>
       <SplitPane dividerPositions="0.5" layoutX="10.0" layoutY="128.0" prefHeight="800.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="396.0" SplitPane.resizableWithParent="false">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="396.0" SplitPane.resizableWithParent="false">
                <children>
-                  <ListView fx:id="listViewNonAlcohol" layoutX="25.0" layoutY="191.0" prefHeight="90.0" prefWidth="160.0">
-                     <tooltip>
-                        <Tooltip text="Press Ctrl or Shift to select multiple values..." />
-                     </tooltip>
-                  </ListView>
-                  <Label layoutX="207.0" layoutY="57.0" prefHeight="19.0" prefWidth="85.0" text="Non-Alcohol:">
+                  <Label layoutX="207.0" layoutY="57.0" prefHeight="19.0" prefWidth="85.0" text="Non-Alcohol:" textFill="#000000b2">
                      <font>
-                        <Font name="Arial" size="14.0" />
+                        <Font name="Roboto" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="24.0" layoutY="175.0" prefHeight="8.0" prefWidth="85.0" text="Fruit:">
+                  <Label layoutX="24.0" layoutY="193.0" prefHeight="8.0" prefWidth="85.0" text="Fruit:" textFill="#000000b2">
                      <font>
-                        <Font name="Arial" size="14.0" />
+                        <Font name="Roboto" size="14.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="listViewFruit" layoutX="206.0" layoutY="76.0" prefHeight="90.0" prefWidth="160.0">
-                     <tooltip>
-                        <Tooltip text="Press Ctrl or Shift to select multiple values..." />
-                     </tooltip>
-                  </ListView>
-                  <ListView fx:id="listViewFlavour" layoutX="206.0" layoutY="192.0" prefHeight="90.0" prefWidth="160.0">
-                     <tooltip>
-                        <Tooltip text="Press Ctrl or Shift to select multiple values..." />
-                     </tooltip>
-                  </ListView>
-                  <Label layoutX="207.0" layoutY="176.0" prefHeight="16.0" prefWidth="85.0" text="Flavour:">
+                  <Label layoutX="207.0" layoutY="193.0" prefHeight="16.0" prefWidth="85.0" text="Flavour:" textFill="#000000b2">
                      <font>
-                        <Font name="Arial" size="14.0" />
+                        <Font name="Roboto" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="24.0" layoutY="327.0" prefHeight="19.0" prefWidth="85.0" text="Chilled:">
+                  <Label layoutX="24.0" layoutY="340.0" prefHeight="19.0" prefWidth="85.0" text="Chilled:" textFill="#000000b2">
                      <font>
-                        <Font name="Arial" size="14.0" />
+                        <Font name="Roboto" size="14.0" />
                      </font>
                   </Label>
-                  <RadioButton fx:id="radioChilledYes" layoutX="125.0" layoutY="327.0" mnemonicParsing="false" text="Yes">
+                  <Label layoutX="24.0" layoutY="359.0" prefHeight="30.0" prefWidth="85.0" text="Alcohol%:" textFill="#000000b2">
                      <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="radioChilledNo" layoutX="205.0" layoutY="327.0" mnemonicParsing="false" text="No">
-                     <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </RadioButton>
-                  <Label layoutX="24.0" layoutY="355.0" prefHeight="30.0" prefWidth="85.0" text="Alcohol%:">
-                     <font>
-                        <Font name="Arial" size="14.0" />
+                        <Font name="Roboto" size="14.0" />
                      </font>
                   </Label>
-                  <RadioButton fx:id="radioPercentHigh" layoutX="125.0" layoutY="361.0" mnemonicParsing="false" text="High">
+                  <TextArea fx:id="txtSelectedIngredients" editable="false" layoutX="24.0" layoutY="415.0" prefHeight="133.0" prefWidth="334.0">
                      <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="radioPercentLow" layoutX="205.0" layoutY="361.0" mnemonicParsing="false" text="Low">
+                        <Font name="Roboto" size="12.0" />
+                     </font></TextArea>
+                  <Label layoutX="24.0" layoutY="384.0" prefHeight="30.0" prefWidth="208.0" text="Preferred Ingredients:">
                      <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </RadioButton>
-                  <RadioButton fx:id="radioPercentNone" layoutX="287.0" layoutY="361.0" mnemonicParsing="false" text="None">
-                     <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </RadioButton>
-                  <TextArea fx:id="txtSelectedIngredients" editable="false" layoutX="24.0" layoutY="417.0" prefHeight="133.0" prefWidth="334.0" />
-                  <Label layoutX="24.0" layoutY="387.0" prefHeight="30.0" prefWidth="208.0" text="Preferred Ingredients:">
-                     <font>
-                        <Font name="Arial Bold" size="16.0" />
+                        <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <Button layoutX="163.0" layoutY="558.0" mnemonicParsing="false" onAction="#retrieveCases" prefHeight="30.0" prefWidth="85.0" text="Retrieve">
-                     <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button layoutX="273.0" layoutY="558.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="85.0" text="Reset">
-                     <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </Button>
                   <Label layoutX="24.0" layoutY="14.0" prefHeight="43.0" prefWidth="208.0" text="Cocktail Preference:">
                      <font>
-                        <Font name="Arial Bold" size="16.0" />
+                        <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="24.0" layoutY="57.0" prefHeight="19.0" prefWidth="85.0" text="Alcohol:">
+                  <Label layoutX="24.0" layoutY="57.0" prefHeight="19.0" prefWidth="85.0" text="Alcohol:" textFill="#000000b2">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="188.0" layoutY="557.0" onAction="#retrieveCases" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #eeeeee;" text="Retrieve">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXListView fx:id="listViewAlcohol" layoutX="25.0" layoutY="76.0" prefHeight="90.0" prefWidth="160.0" />
+                  <JFXListView fx:id="listViewNonAlcohol" layoutX="206.0" layoutY="76.0" prefHeight="90.0" prefWidth="160.0" />
+                  <JFXListView fx:id="listViewFruit" layoutX="23.0" layoutY="211.0" prefHeight="90.0" prefWidth="160.0" />
+                  <JFXListView fx:id="listViewFlavour" layoutX="206.0" layoutY="211.0" prefHeight="90.0" prefWidth="160.0" />
+                  <JFXRadioButton fx:id="radioChilledYes" layoutX="92.0" layoutY="341.0" text="Yes" textFill="#0000008c">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="radioChilledNo" layoutX="185.0" layoutY="341.0" text="No" textFill="#0000008c">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="radioPercentHigh" layoutX="92.0" layoutY="365.0" text="High" textFill="#0000008c">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="radioPercentLow" layoutX="185.0" layoutY="365.0" text="Low" textFill="#0000008c">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="radioPercentNone" layoutX="273.0" layoutY="365.0" text="None" textFill="#0000008c">
+                     <font>
+                        <Font name="Roboto" size="14.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXButton buttonType="RAISED" layoutX="281.0" layoutY="557.0" onAction="#reset" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #FF5252;" text="Reset" textFill="WHITE">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="25.0" layoutY="312.0" text="No. of Liquids:" textFill="#000000b2">
                      <font>
                         <Font name="Arial" size="14.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="listViewAlcohol" layoutX="25.0" layoutY="76.0" prefHeight="90.0" prefWidth="160.0">
-                     <tooltip>
-                        <Tooltip text="Press Ctrl or Shift to select multiple values..." />
-                     </tooltip>
-                  </ListView>
-                  <Label layoutX="26.0" layoutY="294.0" text="No. of Liquids:">
+                  <JFXTextField fx:id="txtNoOfLiquids" layoutX="119.0" layoutY="308.0" promptText="Enter here" unFocusColor="BLACK">
                      <font>
-                        <Font name="Arial" size="14.0" />
+                        <Font name="Roboto" size="12.0" />
                      </font>
-                  </Label>
-                  <TextField fx:id="txtNoOfLiquids" layoutX="124.0" layoutY="290.0" onKeyReleased="#validateNumber" prefHeight="25.0" prefWidth="59.0">
-                     <font>
-                        <Font name="Arial" size="14.0" />
-                     </font>
-                  </TextField>
+                  </JFXTextField>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                <children>
                   <Label layoutX="16.0" layoutY="14.0" prefHeight="43.0" prefWidth="208.0" text="Top Recipes:">
                      <font>
-                        <Font name="Arial Bold" size="16.0" />
+                        <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
                   <TableView fx:id="recipeTable" layoutX="16.0" layoutY="55.0" prefHeight="151.0" prefWidth="363.0">
-                    <columns>
-                      <TableColumn fx:id="idColumn" editable="false" prefWidth="71.0" resizable="false" sortable="false" text="Recipe ID" />
-                      <TableColumn fx:id="titleColumn" editable="false" minWidth="9.0" prefWidth="236.0" resizable="false" sortable="false" text="Title" />
-                        <TableColumn fx:id="similarityScoreColumn" editable="false" minWidth="0.0" prefWidth="54.0" resizable="false" sortable="false" text="SS" />
-                    </columns>
+                     <columns>
+                        <TableColumn fx:id="idColumn" editable="false" prefWidth="74.8148193359375" sortable="false" text="Recipe ID" />
+                        <TableColumn fx:id="titleColumn" editable="false" prefWidth="180.8890380859375" sortable="false" text="Title" />
+                        <TableColumn fx:id="similarityScoreColumn" editable="false" prefWidth="107.9998779296875" sortable="false" text="Similarity Score" />
+                     </columns>
                      <columnResizePolicy>
                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                      </columnResizePolicy>
                   </TableView>
-                  <Label layoutX="17.0" layoutY="349.0" prefHeight="30.0" prefWidth="208.0" text="Original Ingredients:">
+                  <Label layoutX="17.0" layoutY="222.0" prefHeight="30.0" prefWidth="208.0" text="Original Ingredients:">
                      <font>
-                        <Font name="Arial Bold" size="16.0" />
+                        <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="txtOriginalIngredients" editable="false" layoutX="17.0" layoutY="379.0" prefHeight="90.0" prefWidth="363.0" wrapText="true" />
-                  <TextArea fx:id="txtOriginalSteps" editable="false" layoutX="17.0" layoutY="507.0" prefHeight="80.0" prefWidth="363.0" wrapText="true" />
-                  <Label layoutX="17.0" layoutY="477.0" prefHeight="30.0" prefWidth="208.0" text="Original Steps:">
+                  <TextArea fx:id="txtOriginalIngredients" editable="false" layoutX="17.0" layoutY="252.0" prefHeight="70.0" prefWidth="363.0">
                      <font>
-                        <Font name="Arial Bold" size="16.0" />
+                        <Font name="Roboto" size="12.0" />
+                     </font></TextArea>
+                  <TextArea fx:id="txtOriginalSteps" editable="false" layoutX="17.0" layoutY="365.0" prefHeight="70.0" prefWidth="363.0">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font></TextArea>
+                  <Label layoutX="17.0" layoutY="335.0" prefHeight="30.0" prefWidth="208.0" text="Original Steps:">
+                     <font>
+                        <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="16.0" layoutY="217.0" prefHeight="30.0" prefWidth="208.0" text="Adapted Ingredients:">
+                  <Label layoutX="17.0" layoutY="451.0" prefHeight="30.0" prefWidth="208.0" text="Adapted Ingredients:">
                      <font>
-                        <Font name="Arial Bold" size="16.0" />
+                        <Font name="Roboto" size="16.0" />
                      </font>
                   </Label>
-                  <TextArea fx:id="txtAdaptedIngredients" editable="false" layoutX="16.0" layoutY="247.0" prefHeight="90.0" prefWidth="363.0" wrapText="true" />
+                  <TextArea fx:id="txtAdaptedIngredients" editable="false" layoutX="17.0" layoutY="481.0" prefHeight="70.0" prefWidth="363.0">
+                     <font>
+                        <Font name="Roboto" size="12.0" />
+                     </font></TextArea>
                </children></AnchorPane>
-        </items>
+         </items>
       </SplitPane>
    </children>
 </AnchorPane>
