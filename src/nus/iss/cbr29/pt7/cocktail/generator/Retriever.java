@@ -202,4 +202,10 @@ public class Retriever {
 		
 		return result.toArray(new String[result.size()]);
 	}
+	
+	private void updateCaseBase(Instance case, int sim){
+		if(sim < 0.3){
+			_caseBase.addCase(case);
+		}
+	}
 }
